@@ -1,8 +1,8 @@
 from flask import Flask
-helloworld = Flask(__name__)
-@helloworld.route("/test")
+test = Flask(__name__)
+@test.route("/test")
 def run():
     return "{\"message\":\"Hey there python from test\"}"
 
 if __name__ == "__main__":
-    helloworld.run(host="0.0.0.0", port=int("80"), debug=True)
+    test.run(host="0.0.0.0", port=int("8080"), debug=True)
